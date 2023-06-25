@@ -1,0 +1,22 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/examples"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "lib/:file",
+      "destination": "lib/:file.js"
+    },
+    {
+      "source": "lib/types/helpers/:file",
+      "destination": "lib/types/helpers/:file.js"
+    },
+    {
+      "source": "lib/types/modules/:file",
+      "destination": "lib/types/modules/:file.js"
+    }
+  ]
+}

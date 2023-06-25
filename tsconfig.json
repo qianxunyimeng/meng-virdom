@@ -1,0 +1,25 @@
+{
+  "exclude": ["./node_modules", "./lib", "./test"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es5",
+    "module": "es2015",
+    "lib": ["es2015", "es2016", "es2017", "dom"],
+    "moduleResolution": "node",
+    "declaration": true, // 生成定义文件
+    "declarationMap": false, // 生成定义sourceMap
+    "declarationDir": "./lib/types", // 定义文件输出目录
+    "outDir": "lib", //输出目录
+    "rootDir": "./",
+    "strict": true, // 严格模式
+
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true, // 未使用变量报错
+    "experimentalDecorators": true, // 启动装饰器
+    "esModuleInterop": true,
+    "removeComments": false // 删除注释
+  },
+  "include": [
+    "src/*" // 导入目录
+  ]
+}
